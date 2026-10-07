@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0508">
+  <title>Moradores de Hawkins - Gerador de personagens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mundo="real">
+  <!-- Camadas decorativas -->
+  <div class="ruido" aria-hidden="true"></div>
+  <div class="esporos" id="esporos" aria-hidden="true"></div>
+  <div class="clarao" id="clarao" aria-hidden="true"></div>
+  <div class="luzes" id="luzes" aria-hidden="true"></div>
+
+  <header>
+    <p class="data">Hawkins, Indiana &middot; 1984</p>
+    <h1><span>Moradores de</span> Hawkins</h1>
+    <p id="grupo"></p>
+  </header>
+
+  <main>
+    <section class="acoes">
+      <p>Sorteie um morador da cidade e descubra quem ele é nos dois mundos.</p>
+      <div class="botoes">
+        <button id="gerar" class="principal">Gerar personagem</button>
+        <button id="mundo" aria-pressed="false">Entrar no Mundo Invertido</button>
+      </div>
+    </section>
+
+    <section id="resultado" aria-live="polite">
+      <div id="ficha">
+        <p class="vazio">Clique em Gerar personagem para conhecer alguém da cidade.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape"></footer>
+  <script src="script.js"></script>
+</body>
+</html>
